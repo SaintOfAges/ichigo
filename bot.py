@@ -1,13 +1,6 @@
 import discord
 from discord.ext import commands
-import sys
 import discord
-import time
-import sys
-import os
-import random
-import subprocess
-import traceback
 from   discord import errors
 
 bot = commands.Bot(command_prefix="ik", description="Discripto")
