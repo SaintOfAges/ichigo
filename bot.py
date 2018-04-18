@@ -5,7 +5,7 @@ from   discord import errors
 
 bot = commands.Bot(command_prefix="ik", description="Discripto")
 
-###
+#"""
 import functools, youtube_dl
 url = 'youtube url'
 opts = {"format": 'webm[abr>0]/bestaudio/best',"ignoreerrors": True,"default_search": "auto","source_address": "0.0.0.0",'quiet': True}
@@ -13,7 +13,12 @@ ydl = youtube_dl.YoutubeDL(opts)
 func = functools.partial(ydl.extract_info, url, download=False)
 info = func()
 player = discord.FFmpegPCMAudio(info['url'])
-###
+async def play(ctx):
+    channel = discord.utils.get(ctx.guild.channels, type=discord.VoiceChannel)
+    voice_client = await channel.connect()
+    await voice.create_ytdl_player("youtube link")
+    voice_client.play(player)
+#"""
 @bot.command()
 async def yeet(ctx):
     """Sends a simple Hello Message"""
