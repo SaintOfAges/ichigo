@@ -4,7 +4,7 @@ import discord
 from   discord import errors
 
 bot = commands.Bot(command_prefix="ik", description="Discripto")
-@bot.command()
+
 ###
 import functools, youtube_dl
 url = 'youtube url'
@@ -14,6 +14,7 @@ func = functools.partial(ydl.extract_info, url, download=False)
 info = func()
 player = discord.FFmpegPCMAudio(info['url'])
 ###
+@bot.command()
 async def yeet(ctx):
     """Sends a simple Hello Message"""
     await ctx.send("Sup!!")
