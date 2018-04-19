@@ -44,9 +44,9 @@ async def add(ctx,a,b):
 async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.CommandNotFound:
 		await ctx.send("Cant do that mate")
-@bot.event
+'''@bot.event
 if message.content.startswith('$https://discord.gg/'):
-        await message.channel.send('Thats an Invite link!!')	
+        await message.channel.send('Thats an Invite link!!')'''	
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
 
