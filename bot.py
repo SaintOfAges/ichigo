@@ -44,12 +44,12 @@ async def add(ctx,a,b):
 async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.CommandNotFound:
 		await ctx.send("Cant do that mate")
-def owner(ctx):
+def check(ctx):
     return ctx.message.author.id == 199129403458977792
 
 @bot.command()
-@commands.check(owner)
-async def only_for_me(ctx):
+@commands.check(check)
+async def owner(ctx):
     await ctx.send('Thanks for making me!')
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
