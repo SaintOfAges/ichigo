@@ -50,7 +50,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('https://discord.gg/'):
+    if message.content.startswith('$https://discord.gg/'):
         await message.channel.send('Invite link detected!!')
 ##
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
