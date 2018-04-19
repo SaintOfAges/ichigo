@@ -45,7 +45,7 @@ async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.CommandNotFound:
 		await ctx.send("Cant do that mate")
 def check_if_it_is_me(ctx):
-    return ctx.message.author.id == 85309593344815104
+    return ctx.message.author.id == 199129403458977792
 
 @bot.command()
 @commands.check(check_if_it_is_me)
