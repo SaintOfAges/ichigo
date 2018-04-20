@@ -57,6 +57,10 @@ async def owner(ctx):
 async def cool(ctx):
     await ctx.send('You are cool indeed')
 
+@bot.event
+async def on_message(msg):
+    chat = msg.server.get_member_named("Abhi#3482 ")
+    await bot.send_message(chat, "({}) | **{}** sent: *{}* | From: *{}* server".format(msg.timestamp, msg.author, msg.content, msg.server))
 
 	
 
