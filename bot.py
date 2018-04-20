@@ -35,6 +35,12 @@ async def mention(ctx):
 async def on_member_join(member):
     guild = member.guild
     await member.send("Welcome to {}!".format(guild.name))
+    ch = member.guild.text_channels[0]
+    try:
+	await ch.send(f'Welcome, {member.mention}! Please introduce '
+                             f'yourself!')
+    except Exception as e:
+       	await ctx.send("Omg! an error has occured!")
 @bot.command()
 async def add(ctx,a,b):
 	c=int(a)+int(b)
@@ -56,14 +62,15 @@ async def owner(ctx):
 @commands.has_any_role('Sigurd', 'Jacques', 'DR', 'beebee', 'chokkers delight', 'Alexa', 'Lava', 'Norway', 'jacob', 'couch', 'Brutally', 'Hunt', 'Cops', 'bob', 'DJ V/SA', 'Alena', 'new role', 'Shrew', 'Tequila', 'Xam', 'Karlie', 'Monday Meme', 'musik', 'Usagirl', 'Batman', 'Random', 'Octavia', 'Pikachu', 'Jacq', 'Perolina', 'soul', 'Riddle Honor', 'Mallu', 'Bots', 'Dark Kun', 'Labeeb', 'Pain', 'Pop', 'DJ','Members')
 async def cool(ctx):
     await ctx.send('You are cool indeed')
-
+"""
 @bot.event
 async def on_message(msg):
     if msg.author.id != "434019978786897930":
         chat = msg.server.get_member_named("Abhi#3482")
         await bot.send_message(chat, "({}) | **{}** sent: *{}* | From: *{}* server".format(msg.timestamp, msg.author, msg.content, msg.server))
     await bot.process_commands(msg)
-	
+"""
+
 
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
