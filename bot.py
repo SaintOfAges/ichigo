@@ -35,12 +35,7 @@ async def mention(ctx):
 async def on_member_join(member):
     guild = member.guild
     await member.send("Welcome to {}!".format(guild.name))
-    ch = member.guild.text_channels[0]
-    try:
-	await ch.send(f'Welcome, {member.mention}! Please introduce '
-                             f'yourself!')
-    except Exception as e:
-       	await ctx.send("Omg! an error has occured!")
+
 @bot.command()
 async def add(ctx,a,b):
 	c=int(a)+int(b)
