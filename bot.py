@@ -57,9 +57,7 @@ async def owner(ctx):
 async def cool(ctx):
     await ctx.send('You are cool indeed')
 
-@bot.event
-async def on_server_role_update(before, after)
-    await ctx.send('Roles are being Changed!')
+
 	
 
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
