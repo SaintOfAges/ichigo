@@ -72,7 +72,7 @@ async def on_message(msg):
 """
 
 
-bot.run("BOT_TOKEN") 
+bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
 
 
