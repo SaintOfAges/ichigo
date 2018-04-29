@@ -85,14 +85,7 @@ async def cool(ctx):
 async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.MissingRequiredArgument:
 		await ctx.send("You are missing Arguments there buddy!")
-"""
-@bot.event
-async def on_message(msg):
-    if msg.author.id != "434019978786897930":
-        chat = msg.server.get_member_named("Abhi#3482")
-        await bot.send_message(chat, "({}) | **{}** sent: *{}* | From: *{}* server".format(msg.timestamp, msg.author, msg.content, msg.server))
-    await bot.process_commands(msg)
-"""
+
 
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
