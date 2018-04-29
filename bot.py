@@ -11,6 +11,7 @@ import traceback
 from   discord import errors
 import json
 import random
+bot = commands.Bot(command_prefix="ik", description="Discripto")
 ###NSFW ALERT
 a= ["i fuck my teddy bear and cum in it",
 "reaxt im going to shove a football down your nosetril",
@@ -33,7 +34,7 @@ async def nsfw(ctx):
     """Its NSFW ;-)"""
     await ctx.send(random.choice(a))
 ###NSFW END
-bot = commands.Bot(command_prefix="ik", description="Discripto")
+
 @bot.command()
 async def yeet(ctx):
     """Sends a simple Hello Message"""
