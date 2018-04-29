@@ -81,9 +81,10 @@ async def on_message(msg):
         await bot.send_message(chat, "({}) | **{}** sent: *{}* | From: *{}* server".format(msg.timestamp, msg.author, msg.content, msg.server))
     await bot.process_commands(msg)
 """
+@bot.command()
 async def nsfw(ctx):
     """Its NSFW ;-)"""
-    await ctx.send(random.random(nsfw))
+    await ctx.send(random.choice(nsfw))
 
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
