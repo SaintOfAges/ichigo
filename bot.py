@@ -13,11 +13,10 @@ import json
 import random
 
 ###NSFW!!
-nsfw=["i fuck my teddy bear and cum in it","reaxt im going to shove a football down your nosetril","hows it hangin? from a string probably","*ping* while u were slurping pussy from a bendy straw i studied the blade","i was in a good mood laughing at stupid as fuck deaths then 11 year old cancer child's last moments happend","why does it look like electricity is coming out of their dick","horsecock tho :heart:","*ping* THAT DOES IT FAGGOT! IM NOT A FURRY OR CLOSET FURRY! SHUT THE FUCK UP! EAT ASS AND DIE!","Hey faggots you can buy yourself dragon dildos 40% off tomorrow","Oh no I need my underage boobies !!!","Paul Blart: Mall Cop is my favorite movie.","Does anyone here know how to download club penguin?","shes gonna find your dirty mageziens","bedroom? if you insist. i mean you are pretty cute. he took my hand, i blush deeply. as we walk to the bedroom. i pull out my bad dick. wow i thought you were a lady. well, whatever works!! narrator it didnt work. its ok my surgeon is the best my surgeon did a good job on me. i was once a dog. conveniently, he identifies as a dogkin. wow thats quite a surprise you know what else is surprising? he had a 13 inch dog penis. it was red and everything, but like, as a joke. anyways i fucked it. my parents are really proud of him for that massive honk. they were also happy with my ability to take such a massive dog... to think i was gay before(... now i'm mega gay!)",
-    "i named the image of the citadel nigger.jpg","```make a website like real people``` this server is to use the bots, you cant do that on websites",
-    "i'm wating the security cams in a chinese nursing home lobby","node.js more like nude.js","If I'm going to blow a man, I'd like to have his dick wrapped in a hot dog bun",":middle_finger: :dash:",
-    ":kaaba: should be called baka","ASIANBOI","if ma girl ever cheats on me ill stick her to a chair and make her watch me have sex with the guy who cheated on me with",
-    "Your midget spunnerr spun for 3 minutes 12 seconds. Congratulations, you now have asshole cancer.","Pls stop i have miniophobia"]
+ a = ["i fuck my teddy bear and cum in it","reaxt im going to shove a football down your nosetril","hows it hangin? from a string probably","*ping* while u were slurping pussy from a bendy straw i studied the blade","i was in a good mood laughing at stupid as fuck deaths then 11 year old cancer child's last moments happend","why does it look like electricity is coming out of their dick","horsecock tho :heart:","*ping* THAT DOES IT FAGGOT! IM NOT A FURRY OR CLOSET FURRY! SHUT THE FUCK UP! EAT ASS AND DIE!","Hey faggots you can buy yourself dragon dildos 40% off tomorrow","Oh no I need my underage boobies !!!","Paul Blart: Mall Cop is my favorite movie",
+"Does anyone here know how to download club penguin?","shes gonna find your dirty mageziens","bedroom? if you insist. i mean you are pretty cute. he took my hand, i blush deeply. as we walk to the bedroom. i pull out my bad dick. wow i thought you were a lady. well, whatever works!! narrator it didnt work. its ok my surgeon is the best my surgeon did a good job on me. i was once a dog. conveniently, he identifies as a dogkin. wow thats quite a surprise you know what else is surprising? he had a 13 inch dog penis it was red and everything, but like as a joke anyways i fucked it. my parents are really proud of him for that massive honk they were also happy with my ability to take such a massive dog... to think i was gay before( now im mega gay!)",
+"i named the image of the citadel nigger.jpg","```make a website like real people``` this server is to use the bots, you cant do that on websites","im wating the security cams in a chinese nursing home lobby","node.js more like nude.js","If Im going to blow a man, Id like to have his dick wrapped in a hot dog bun"
+,"should be called baka","ASIANBOI","if ma girl ever cheats on me ill stick her to a chair and make her watch me have sex with the guy who cheated on me with","Your midget spunnerr spun for 3 minutes 12 seconds. Congratulations, you now have asshole cancer","Pls stop i have miniophobia"]
 ###NFSW END
 
 
@@ -84,7 +83,7 @@ async def on_message(msg):
 @bot.command()
 async def nsfw(ctx):
     """Its NSFW ;-)"""
-    await ctx.send(random.choice(nsfw))
+    await ctx.send(random.choice(a))
 
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
