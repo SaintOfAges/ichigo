@@ -87,7 +87,14 @@ async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.MissingRequiredArgument:
 		await ctx.send("You are missing Arguments there buddy!")
 
-
+@bot.command()
+async def emote(ctx,word):
+	cat=""
+	for i in word:
+		i=emo+i+ji
+		cat=cat+i
+	await ctx.send(cat)
+	
 bot.run("NDM0MDE5OTc4Nzg2ODk3OTMw.DbJaAg.ZMYTYDeGStoTJwsBpLBa8LD8cow") 
 
 
