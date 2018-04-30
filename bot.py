@@ -86,7 +86,9 @@ async def cool(ctx):
 async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.MissingRequiredArgument:
 		await ctx.send("You are missing Arguments there buddy!")
-
+emo=":regional_indicator_"
+ji=":" 
+cat=""
 @bot.command()
 async def emote(ctx,word):
 	cat=""
