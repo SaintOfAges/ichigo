@@ -87,7 +87,9 @@ async def owner(ctx):
 @commands.has_any_role('Sigurd', 'Jacques', 'DR', 'beebee', 'chokkers delight', 'Alexa', 'Lava', 'Norway', 'jacob', 'couch', 'Brutally', 'Hunt', 'Cops', 'bob', 'DJ V/SA', 'Alena', 'new role', 'Shrew', 'Tequila', 'Xam', 'Karlie', 'Monday Meme', 'musik', 'Usagirl', 'Batman', 'Random', 'Octavia', 'Pikachu', 'Jacq', 'Perolina', 'soul', 'Riddle Honor', 'Mallu', 'Bots', 'Dark Kun', 'Labeeb', 'Pain', 'Pop', 'DJ','Members')
 async def cool(ctx):
     await ctx.send('You are cool indeed')
-
+@bot.command()
+async def embed(ctx,title,text):
+	await ctx.send(embed=discord.Embed(title=title,description=text,colour=discord.Colour(0xFF000)))
 
 emo=":regional_indicator_"
 ji=":" 
