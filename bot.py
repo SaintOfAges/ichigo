@@ -12,6 +12,10 @@ from   discord import errors
 import json
 import random
 bot = commands.Bot(command_prefix="ik", description="Discripto")
+try:
+	bot.load_extension("REPL")
+except:
+	print("Hmm")
 ###NSFW ALERT
 a= ["i fuck my teddy bear and cum in it",
 "reaxt im going to shove a football down your nosetril",
