@@ -69,6 +69,8 @@ async def add(ctx,a,b):
 async def on_command_error(ctx, exception):
 	if type(exception) is commands.errors.CommandNotFound:
 		await ctx.send("Cant do that mate")
+	if type(exception) is commands.errors.MissingRequiredArgument:
+		await ctx.send("You are missing Arguments there buddy!")
 def check(ctx):
     return ctx.message.author.id == 199129403458977792
 
@@ -82,10 +84,7 @@ async def owner(ctx):
 async def cool(ctx):
     await ctx.send('You are cool indeed')
 
-@bot.event
-async def on_command_error(ctx, exception):
-	if type(exception) is commands.errors.MissingRequiredArgument:
-		await ctx.send("You are missing Arguments there buddy!")
+
 emo=":regional_indicator_"
 ji=":" 
 cat=""
